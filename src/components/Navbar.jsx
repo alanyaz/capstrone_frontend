@@ -32,7 +32,11 @@ const Navbar = () => {
 
   return (
     <nav style={navbarStyle}>
-      <div style={logoStyle}>Alanyaz</div>
+      <div style={logoStyle}>
+        <Link to={"/"}  style={{color : "black" , textDecoration : "none"}}>
+        Capstone
+        </Link>
+         </div>
       <ul style={navItemsStyle}>
         <li style={navItemStyle}>
           <Link to="/contact" style={linkStyle}>Contact</Link>

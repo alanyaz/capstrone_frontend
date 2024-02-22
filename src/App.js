@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import Contact from './pages/contact';
+import HomePage from './pages/homepage';
+import ProductDetails from './pages/productDetails';
 
 
 function App() {
@@ -11,10 +13,11 @@ function App() {
     <Router>
       <Navbar/>
         <Routes>
-          <Route path="/" element={<div><h2 style={{textAlign : "center" , margin : "2rem"}}>Home Page</h2></div>} />
+          <Route path="/" element={<HomePage/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/product/:id" element={<ProductDetails/>} />
         </Routes>
     </Router>
   );
